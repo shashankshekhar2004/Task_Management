@@ -12,7 +12,7 @@ const ImportantTask = () => {
       };
 
       const response = await axios.get(
-        "http://localhost:8000/api/v2/get-imp-tasks",
+        "https://task-mangement-lumm.onrender.com/api/v2/get-imp-tasks",
         { headers }
       );
       //console.log(response.data);

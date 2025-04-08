@@ -12,7 +12,7 @@ const IncompleteTask = () => {
       };
 
       const response = await axios.get(
-        "http://localhost:8000/api/v2/get-incomplete-tasks",
+        "https://task-mangement-lumm.onrender.com/api/v2/get-incomplete-tasks",
         { headers }
       );
       //console.log(response.data);

@@ -11,7 +11,7 @@ const CompletedTask = () => {
       };
 
       const response = await axios.get(
-        "http://localhost:8000/api/v2/get-complete-tasks",
+        "https://task-mangement-lumm.onrender.com/api/v2/get-complete-tasks",
         { headers }
       );
       //console.log(response.data);

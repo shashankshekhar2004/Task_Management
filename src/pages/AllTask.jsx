@@ -21,7 +21,7 @@ const AllTask = () => {
       };
 
       const response = await axios.get(
-        "http://localhost:8000/api/v2/get-all-tasks",
+        "https://task-mangement-lumm.onrender.com/api/v2/get-all-tasks",
         { headers }
       );
       setData(response.data.data.tasks);

@@ -41,7 +41,7 @@ const InputData = ({ InputDiv, setInputDiv, updatedData, setUpdatedData }) => {
   const processTaskWithAI = async (taskText) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v3/gemini/process-task",
+        "https://task-mangement-lumm.onrender.com/api/v3/gemini/process-task",
         { taskText }
       );
 
@@ -79,7 +79,7 @@ const InputData = ({ InputDiv, setInputDiv, updatedData, setUpdatedData }) => {
     }
 
     const response = await axios.post(
-      "http://localhost:8000/api/v2/create-task",
+      "https://task-mangement-lumm.onrender.com/api/v2/create-task",
       Data,
       { headers }
     );
@@ -95,7 +95,7 @@ const InputData = ({ InputDiv, setInputDiv, updatedData, setUpdatedData }) => {
     }
 
     const response = await axios.put(
-      `http://localhost:8000/api/v2/update-task/${updatedData.id}`,
+      `https://task-mangement-lumm.onrender.com/api/v2/update-task/${updatedData.id}`,
       Data,
       { headers }
     );

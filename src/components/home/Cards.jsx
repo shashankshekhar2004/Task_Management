@@ -13,7 +13,7 @@ const Cards = ({ home, setInputDiv, data, setUpdatedData }) => {
         authorization: `Bearer ${localStorage.getItem("token")}`, // Corrected token usage
       };
       const response = await axios.put(
-        `http://localhost:8000/api/v2/update-complete-task/${id}`,
+        `https://task-mangement-lumm.onrender.com/api/v2/update-complete-task/${id}`,
         {},
         { headers }
       );
@@ -29,7 +29,7 @@ const Cards = ({ home, setInputDiv, data, setUpdatedData }) => {
         authorization: `Bearer ${localStorage.getItem("token")}`, // Corrected token usage
       };
       const response = await axios.put(
-        `http://localhost:8000/api/v2/update-imp-task/${id}`,
+        `https://task-mangement-lumm.onrender.com/api/v2/update-imp-task/${id}`,
         {},
         { headers }
       );
@@ -45,7 +45,7 @@ const Cards = ({ home, setInputDiv, data, setUpdatedData }) => {
         authorization: `Bearer ${localStorage.getItem("token")}`, // Corrected token usage
       };
       const response = await axios.delete(
-        `http://localhost:8000/api/v2/delete-task/${id}`,
+        `https://task-mangement-lumm.onrender.com/api/v2/delete-task/${id}`,
         { headers }
       );
       console.log(response.data.message);
